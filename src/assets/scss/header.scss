@@ -1,0 +1,76 @@
+@import '~@/assets/scss/public.scss';
+header {
+  width: 100%;
+  line-height: 100px;
+  background-color: $bgTheme;
+  height: 100px;
+  .header__content {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    h1 {
+      font-family: SourceHanSansSC;
+      font-weight: 700;
+      font-size: 36px;
+      color: rgba(255, 255, 255, 1);
+      cursor: pointer;
+    }
+    dl {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+    }
+    dt {
+      font-family: SourceHanSansSC;
+      font-weight: 400;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 1);
+      &.service__center {
+        cursor: pointer;
+      }
+      &:nth-child(2) {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      p {
+        font-family: SourceHanSansSC;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 1);
+        font-style: normal;
+        letter-spacing: 0px;
+        line-height: 20px;
+        margin-right: 20px;
+        text-align: center;
+        &:last-child {
+          cursor: pointer;
+          margin-top: 10px;
+        }
+      }
+    }
+    dd {
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      border-radius: 50%;
+      .el-image {
+        width: 100%;
+        height: 100%;
+      }
+      ::v-deep .image-slot {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: #f5f7fa;
+        color: #909399;
+        font-size: 20px;
+        display: flex;
+      }
+    }
+  }
+}

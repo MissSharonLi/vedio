@@ -1,0 +1,100 @@
+@import '~@/assets/scss/public.scss';
+nav {
+  width: 1160px;
+  margin: 24px auto;
+  background-color: #fff;
+  padding: 20px;
+  min-height: 40px;
+  .class__item {
+    min-width: 80px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(102, 102, 102);
+    border-width: 1px;
+    border-style: solid;
+    color: rgb(19, 18, 18);
+    border-radius: 100px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &.active {
+      border-color: $bgTheme;
+      color: $bgTheme;
+    }
+  }
+}
+section {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 500px;
+  .box-card {
+    height: 200px;
+    margin-bottom: 20px;
+    ::v-deep .el-card__body {
+      width: 1160px;
+      padding: 0;
+      display: flex;
+      padding-right: 40px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .el-image {
+      width: 150px;
+      height: 200px;
+    }
+    ::v-deep .image-slot {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background: #f5f7fa;
+      color: #909399;
+      font-size: 20px;
+      display: flex;
+    }
+    dl {
+      display: flex;
+    }
+    dd {
+      padding: 30px;
+      height: 120px;
+      position: relative;
+      h1 {
+        margin-bottom: 30px;
+        font-family: SourceHanSansSC;
+        font-weight: 400;
+        font-size: 20px;
+        color: rgba(51, 51, 51, 1);
+      }
+      p {
+        .el-button--primary.is-plain {
+          pointer-events: none;
+        }
+        &:last-child {
+          position: absolute;
+          bottom: 0;
+          font-family: SourceHanSansSC;
+          font-weight: 400;
+          font-size: 14px;
+          color: rgba(153, 153, 153, 1);
+        }
+      }
+    }
+  }
+}
+footer {
+  min-height: 108px;
+}
+::v-deep .el-pagination {
+  text-align: center;
+  margin: 0 auto 30px;
+  width: 1200px;
+  padding: 40px 0;
+  background: #fff;
+}
+::v-deep .el-empty {
+  background-color: #fff;
+  min-height: 500px;
+}

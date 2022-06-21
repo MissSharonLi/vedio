@@ -1,0 +1,159 @@
+@import '~@/assets/scss/public.scss';
+.container {
+  margin: 50px auto;
+  background-color: #fff;
+  min-height: 800px;
+  width: 1200px;
+  border-radius: 10px;
+}
+section {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 266px;
+  dt {
+    width: 200px;
+    height: 200px;
+  }
+  .el-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  ::v-deep .image-slot {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #f5f7fa;
+    color: #909399;
+    font-size: 20px;
+    display: flex;
+  }
+  dl {
+    display: flex;
+    min-height: 206px;
+  }
+  dd {
+    padding: 20px 30px 20px 40px;
+    position: relative;
+    min-height: 206px;
+    h1 {
+      margin-bottom: 30px;
+      min-height: 20px;
+      span {
+        &:first-child {
+          font-family: SourceHanSansSC;
+          font-weight: 400;
+          font-size: 20px;
+          color: rgba(51, 51, 51, 1);
+        }
+        &:last-child {
+          font-family: SourceHanSansSC;
+          font-weight: 400;
+          font-size: 14px;
+          color: rgba(153, 153, 153, 1);
+          padding-left: 30px;
+        }
+      }
+    }
+    p {
+      display: flex;
+      align-items: center;
+      min-height: 32px;
+      .el-button--primary.is-plain {
+        pointer-events: none;
+      }
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+      span {
+        font-family: SourceHanSansSC;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgb(153, 153, 153);
+        &:first-child {
+          margin-right: 10px;
+          min-width: 70px;
+          text-align: right;
+        }
+        &.label {
+          min-width: 68px;
+          height: 32px;
+          background-color: rgb(242, 242, 243);
+          border-style: none;
+          border-color: unset;
+          color: rgb(133, 136, 142);
+          border-radius: 16px;
+          font-size: 12px;
+          margin-right: 10px;
+          text-align: center;
+          line-height: 32px;
+          display: block;
+        }
+      }
+      i {
+        font-weight: 400;
+        font-size: 16px;
+        color: rgb(153, 153, 153);
+        display: block;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+article {
+  margin-top: 40px;
+  padding: 30px 40px;
+  h1 {
+    font-family: SourceHanSansSC;
+    font-weight: 700;
+    font-size: 28px;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 30px;
+  }
+  dl {
+    dt {
+      font-family: SourceHanSansSC;
+      font-weight: 400;
+      font-size: 18px;
+      color: rgba(51, 51, 51, 1);
+      margin-bottom: 24px;
+    }
+    dd {
+      font-family: SourceHanSansSC;
+      font-weight: 400;
+      font-size: 16px;
+      color: rgb(153, 153, 153);
+      margin-bottom: 24px;
+      line-height: 1.8;
+      text-align: justify;
+      min-height: 30px;
+    }
+  }
+}
+.footer__content {
+  text-align: center;
+  margin-top: 30px;
+  .el-button {
+    width: 100px;
+    &:first-child {
+      margin-right: 50px;
+    }
+  }
+}
+//本地流
+.local-stream {
+  width: 500px;
+  height: 500px;
+}
+//远端流
+.distant-stream {
+  width: 200px;
+  height: 200px;
+}
